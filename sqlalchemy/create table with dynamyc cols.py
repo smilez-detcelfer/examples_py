@@ -23,6 +23,7 @@ class Table_class(object):
 mapper(Table_class, table_meta)
 # после mapper можно обращаться так:
 t = Table_class
+#хуйня ниже перепроверить
 t.colname = 'record in colname'
 t.colname1 = 'record in colname1'
 
