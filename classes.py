@@ -28,11 +28,15 @@ class Table:
             print(attribute, '=', value)
 
 
-
 column_list = ['col1', 'col2', 'col3']
 table = Table('tablename', 'sche1', column_list)
-
 table.display()
 table.c_col1.display()
 
+table_list = ['bitcoin', 'lightcoin', 'dogecoin']
 
+instance_list = []
+for i in table_list:
+    instance_list.append(Table(i, 'sche1', column_list))
+
+print(getattr(instance_list[0], 'name'))

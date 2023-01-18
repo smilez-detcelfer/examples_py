@@ -9,7 +9,6 @@ import multiprocessing
 engine = create_engine("postgresql://postgres:postgres@localhost:5432/testdb", echo = True)
 Session = sessionmaker(bind = engine)
 session = Session()
-
 Base = declarative_base()
 
 #описание таблицы в БД
