@@ -2,11 +2,11 @@ from sqlalchemy import Table, Column, Integer, Unicode, MetaData, create_engine,
 from sqlalchemy.orm import mapper, create_session, sessionmaker
 
 # подключаемся к бд
-engine = create_engine("postgresql://postgres:postgres@localhost:5432/testdb", echo = True, future=True)
+engine = create_engine("postgresql://postgres:postgres@localhost:5432/testdb", echo = False, future=True)
 # кладем в Meta метаданные подгруженные из БД
 meta = MetaData(engine)
 # описываем какие таблицы хотим выгрузить из meta
-coins = Table('coins', meta, autoload=True)
+coins = Table('example_coins', meta, autoload=True)
 
 # можем посмотреть метаданные из подгруженной таблицы, например данные колонок
 coins_cols = coins.c
@@ -15,8 +15,8 @@ for i in coins_cols:
 
 # делаем запись в БД
 insert_query = coins.insert().values([
-    {'bitcoin' : 'hueta', 'lightcoin' : "parasha"},
-    {'bitcoin' : "hueta1", 'lightcoin' : "parasha1"},
+    {'bitcoin' : 'hueta', 'dogecoin' : "parasha"},
+    {'bitcoin' : "hueta1", 'dogecoin' : "parasha1"},
     ])
 print(insert_query)
 
