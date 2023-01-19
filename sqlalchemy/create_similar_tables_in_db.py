@@ -7,7 +7,7 @@ metadata = MetaData(engine)
 
 
 #define table list and column list
-table_list = ['bitcoin', 'lightcoin', 'dogecoin']
+table_list = ['coin_bitcoin', 'coin_lightcoin', 'coin_dogecoin']
 column_list = [('rec_id', 'int'),
                ('timestamp', 'timestamptz'),
                ('sometext', 'bool'),
@@ -29,11 +29,11 @@ type_lookup = {
     'values': Text
 }
 
-# append class instance
-table_instances_list = []
+# add description to metadata obj
 for t in table_list:
-    table_instances_list.append(Table(t, metadata,
+    Table(t, metadata,
     Column('id', Integer, primary_key=True),
-    *(Column(column_name, type_lookup[column_type]) for column_name, column_type in column_list)))
+    *(Column(column_name, type_lookup[column_type]) for column_name, column_type in column_list))
 
+# create data from metadata
 metadata.create_all()
