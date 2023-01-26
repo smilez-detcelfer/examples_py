@@ -31,7 +31,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.load_meta_from_db_list (1)">
+  <component name="RunManager" selected="Python.stdout_to_file">
     <configuration name="create table with dynamyc cols" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="examples" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -116,7 +116,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="meta from dicts" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="stdout_to_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="examples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -124,11 +124,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sqlalchemy" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/std_in_out" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sqlalchemy/meta from dicts.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/std_in_out/stdout_to_file.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.stdout_to_file" />
         <item itemvalue="Python.load_meta_from_db_list (1)" />
         <item itemvalue="Python.load_meta_from_db_list" />
         <item itemvalue="Python.load_meta_from_db" />
         <item itemvalue="Python.create table with dynamyc cols" />
-        <item itemvalue="Python.meta from dicts" />
       </list>
     </recent_temporary>
   </component>
